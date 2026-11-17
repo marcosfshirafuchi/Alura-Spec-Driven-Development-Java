@@ -46,3 +46,11 @@ Use `Authorization: Bearer <accessToken>` nas rotas protegidas. Para confirmar p
 - O pagamento é simulado: não há integração real com gateway.
 - A listagem de produtos filtra em memória nesta primeira versão. Para produção, implemente filtros/paginação no banco.
 - Esta é uma conversão funcional de referência, **não validada por testes de integração**. Antes de produção, adicionar migrations, testes de concorrência/estoque, observabilidade e regras de multi-tenancy.
+
+
+## Documentação técnica auditada (17/11/2026)
+- [Arquitetura do Sistema](docs/ARQUITETURA_DO_SISTEMA.md)
+- [Objetivo do Sistema](docs/OBJETIVO_DO_SISTEMA.md)
+- READMEs locais nos pacotes `config`, `controller`, `service`, `repository`, `model`, em `src/main/resources` e `src/test/java/br/com/ecommerce`.
+
+> A documentação reflete análise estática; não comprova execução ou testes integrados. Para mudanças, atualizar as especificações SDD e documentação na mesma alteração.
